@@ -110,8 +110,17 @@ extension FindNewsViewController {
 }
 
 extension FindNewsViewController: UITextFieldDelegate {
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         bottomHeightContstraint.constant = 250
+        return true
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case findNewsTextField:
+            findNewsTextField.resignFirstResponder()
+        default:
+            findNewsTextField.resignFirstResponder()
+        }
         return true
     }
 }

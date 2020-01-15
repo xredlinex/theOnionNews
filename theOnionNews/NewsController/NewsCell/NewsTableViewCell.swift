@@ -15,6 +15,8 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionTextLabel: UILabel!
     @IBOutlet weak var articleImageView: UIImageView!
     @IBOutlet weak var articlePublishedAtTextLabel: UILabel!
+    @IBOutlet weak var authorTextLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,8 +37,7 @@ extension NewsTableViewCell {
         descriptionTextLabel.text = article.description ?? "no desciption"
         articleImageView.downloadImage(url: article.urlToImage ?? "noImage")
         articlePublishedAtTextLabel.text = article.publishedAt ?? "00-00-00"
+        authorTextLabel.text = article.author ?? "-"
         
-        
-      
     }
 }

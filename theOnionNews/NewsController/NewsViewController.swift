@@ -52,6 +52,13 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ReedNewsViewController") as! ReedNewsViewController
+        viewController.url = articles[indexPath.row].url ?? "apple.com"
+        navigationController?.pushViewController(viewController, animated: true)
+        return
+    }
     
 }
 
