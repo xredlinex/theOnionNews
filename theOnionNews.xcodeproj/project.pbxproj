@@ -47,13 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		97820D2923CDCC9B006E9BBA /* FindeNewsController */ = {
+		97820D2923CDCC9B006E9BBA /* FindNewsController */ = {
 			isa = PBXGroup;
 			children = (
 				97848DED23CD28D600D102E4 /* FindNewsViewController.swift */,
 				97820D2A23CDCCC6006E9BBA /* FindNewsViewController+Extension.swift */,
 			);
-			path = FindeNewsController;
+			path = FindNewsController;
 			sourceTree = "<group>";
 		};
 		97B169B923CD1A7600C5317A = {
@@ -78,7 +78,7 @@
 				97B169C523CD1A7600C5317A /* AppDelegate.swift */,
 				97B169C723CD1A7600C5317A /* SceneDelegate.swift */,
 				97848DE923CD1DD000D102E4 /* NewsModel.swift */,
-				97820D2923CDCC9B006E9BBA /* FindeNewsController */,
+				97820D2923CDCC9B006E9BBA /* FindNewsController */,
 				97848DEB23CD268D00D102E4 /* NewsViewController.swift */,
 				97DBFA4923CD49D900E5D3D2 /* NewsTableViewCell.swift */,
 				97DBFA4A23CD49D900E5D3D2 /* NewsTableViewCell.xib */,

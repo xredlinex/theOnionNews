@@ -12,19 +12,23 @@ class NewsViewController: UIViewController {
 
  
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var newsCountTextLabel: UILabel!
     
     var articles: [Article] = []
         
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        getNews()
         
+        newsCountTextLabel.text = "\(articles.count)"
         
         tableView.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsTableViewCell")
-   
+        tableView.reloadData()
       
        
+    }
+    
+    @IBAction func didTapGoBackButton(_ sender: Any) {
+        navigationController?.popViewController(animated: false)
     }
 }
 
@@ -56,7 +60,7 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
 extension NewsViewController {
     
     func getNews() {
-        let url = URL(string: "https://newsapi.org/v2/everything?q=Bitcoin")
+        let url = URL(string: "https://newsapi.org/v2/everything?q=Bitcoin&from=2020-12-28&to=2020-01-12")
         
         if let url = url {
             var urlRequest = URLRequest(url: url)
@@ -102,9 +106,8 @@ extension NewsViewController {
                                 self.articles.append(article)
                             }
                             for art in self.articles {
-                                debugPrint(art.content)
+                                debugPrint(art.title)
                             }
-                            
                         }
                         DispatchQueue.main.async {
                             self.tableView.reloadData()

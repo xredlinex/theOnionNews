@@ -23,25 +23,18 @@ class FindNewsViewController: UIViewController {
         view.addGestureRecognizer(keyboardhide)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        articles.removeAll()
+        findNewsTextField.text = ""
+    }
+    
     @IBAction func didTapFindByKeywordActionButton(_ sender: Any) {
-        if let keyword = findNewsTextField.text, keyword != ""{
+        if let keyword = findNewsTextField.text, keyword != "" {
             getNews(keyword)
-        } else {
-            debugPrint("empty field")
+         } else {
+           showErrorAlert("Пустое поле поиска!")
         }
     }
 }
-
-extension FindNewsViewController {
-    
-    func getNews(_ keyword: String) {
-        
-        
-    }
-    
-    
-}
-
-
-
 
