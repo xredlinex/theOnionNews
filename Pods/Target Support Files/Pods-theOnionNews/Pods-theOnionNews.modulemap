@@ -1,0 +1,6 @@
+framework module Pods_theOnionNews {
+  umbrella header "Pods-theOnionNews-umbrella.h"
+
+  export *
+  module * { export * }
+}
