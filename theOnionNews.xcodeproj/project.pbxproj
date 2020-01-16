@@ -19,6 +19,7 @@
 		97DBFA4B23CD49D900E5D3D2 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DBFA4923CD49D900E5D3D2 /* NewsTableViewCell.swift */; };
 		97DBFA4C23CD49D900E5D3D2 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DBFA4A23CD49D900E5D3D2 /* NewsTableViewCell.xib */; };
 		97ED5EF723CF71630004A2D7 /* ReadNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED5EF623CF71630004A2D7 /* ReadNewsViewController.swift */; };
+		97ED5EFC23CFE9C70004A2D7 /* NewsViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED5EFB23CFE9C70004A2D7 /* NewsViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		97DBFA4923CD49D900E5D3D2 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		97DBFA4A23CD49D900E5D3D2 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		97ED5EF623CF71630004A2D7 /* ReadNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNewsViewController.swift; sourceTree = "<group>"; };
+		97ED5EFB23CFE9C70004A2D7 /* NewsViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				97848DEB23CD268D00D102E4 /* NewsViewController.swift */,
+				97ED5EFB23CFE9C70004A2D7 /* NewsViewController+Extension.swift */,
 				97ED5EF923CF76A50004A2D7 /* NewsCell */,
 			);
 			path = NewsController;
@@ -204,6 +207,7 @@
 				97848DEC23CD268D00D102E4 /* NewsViewController.swift in Sources */,
 				97848DEE23CD28D600D102E4 /* FindNewsViewController.swift in Sources */,
 				97B169C823CD1A7600C5317A /* SceneDelegate.swift in Sources */,
+				97ED5EFC23CFE9C70004A2D7 /* NewsViewController+Extension.swift in Sources */,
 				97820D2B23CDCCC6006E9BBA /* FindNewsViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

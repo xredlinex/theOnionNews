@@ -11,7 +11,6 @@ import WebKit
 
 class ReadNewsViewController: UIViewController {
 
-    
     @IBOutlet weak var webView: WKWebView!
     
     var url = String()
@@ -23,17 +22,9 @@ class ReadNewsViewController: UIViewController {
             let urlRequest = URLRequest(url: recieveURL)
             webView.load(urlRequest)
         }
-        
-        
-        
-        
-
-        
     }
     
     @IBAction func didTapGoBackActionButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
-    
-    
 }
