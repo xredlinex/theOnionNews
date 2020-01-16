@@ -51,7 +51,6 @@ extension FindNewsViewController {
                                 self.view.makeToastActivity(.center)
                             }
                             for jsonArticle in jsonArticles {
-    
                                 let article = Article()
                                 let source = Source()
                                 if let jsonSourse = jsonArticle["source"] as? [String : Any] {
@@ -86,7 +85,6 @@ extension FindNewsViewController {
                                 article.articleIsRead = false
                                 article.source = source
                                 self.articles.append(article)
-                                
                             }
                             DispatchQueue.main.async {
                                 if self.articles.count != 0 {
@@ -139,13 +137,14 @@ extension FindNewsViewController {
 
 extension FindNewsViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        bottomHeightContstraint.constant = 250
+        bottomHeightContstraint.constant = 50
         return true
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case findNewsTextField:
             findNewsTextField.resignFirstResponder()
+            bottomHeightContstraint.constant = 0
         default:
             findNewsTextField.resignFirstResponder()
         }

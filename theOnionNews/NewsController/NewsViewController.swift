@@ -53,9 +53,10 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
             viewController.url = url
             navigationController?.pushViewController(viewController, animated: true)
         }
-        return
     }
+    
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
         if articles[indexPath.row].articleIsRead == false {
             articles[indexPath.row].articleIsRead = true
             unreadArticles -= 1

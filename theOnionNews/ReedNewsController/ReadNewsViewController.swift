@@ -26,7 +26,6 @@ class ReadNewsViewController: UIViewController {
         if let recieveURL = URL(string: url) {
             let urlRequest = URLRequest(url: recieveURL)
             webView.load(urlRequest)
-            
         }
     }
     
