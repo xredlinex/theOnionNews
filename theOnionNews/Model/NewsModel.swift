@@ -27,5 +27,6 @@ class Article {
     var urlToImage: String?
     var publishedAt: String?
     var content: String?
+    var articleIsRead: Bool?
 }
 

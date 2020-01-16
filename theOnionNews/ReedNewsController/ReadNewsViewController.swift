@@ -1,5 +1,5 @@
 //
-//  ReedNewsViewController.swift
+//  ReadNewsViewController.swift
 //  theOnionNews
 //
 //  Created by alexey sorochan on 15.01.2020.
@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class ReedNewsViewController: UIViewController {
+class ReadNewsViewController: UIViewController {
 
     
     @IBOutlet weak var webView: WKWebView!

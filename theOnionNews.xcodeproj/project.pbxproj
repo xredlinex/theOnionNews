@@ -18,7 +18,7 @@
 		97B169D223CD1A7800C5317A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B169D023CD1A7800C5317A /* LaunchScreen.storyboard */; };
 		97DBFA4B23CD49D900E5D3D2 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DBFA4923CD49D900E5D3D2 /* NewsTableViewCell.swift */; };
 		97DBFA4C23CD49D900E5D3D2 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DBFA4A23CD49D900E5D3D2 /* NewsTableViewCell.xib */; };
-		97ED5EF723CF71630004A2D7 /* ReedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED5EF623CF71630004A2D7 /* ReedNewsViewController.swift */; };
+		97ED5EF723CF71630004A2D7 /* ReadNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED5EF623CF71630004A2D7 /* ReadNewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		97B169D323CD1A7800C5317A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97DBFA4923CD49D900E5D3D2 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		97DBFA4A23CD49D900E5D3D2 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
-		97ED5EF623CF71630004A2D7 /* ReedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReedNewsViewController.swift; sourceTree = "<group>"; };
+		97ED5EF623CF71630004A2D7 /* ReadNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 		97ED5EF823CF72730004A2D7 /* ReedNewsController */ = {
 			isa = PBXGroup;
 			children = (
-				97ED5EF623CF71630004A2D7 /* ReedNewsViewController.swift */,
+				97ED5EF623CF71630004A2D7 /* ReadNewsViewController.swift */,
 			);
 			path = ReedNewsController;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 				97848DEA23CD1DD000D102E4 /* NewsModel.swift in Sources */,
 				97DBFA4B23CD49D900E5D3D2 /* NewsTableViewCell.swift in Sources */,
 				97B169C623CD1A7600C5317A /* AppDelegate.swift in Sources */,
-				97ED5EF723CF71630004A2D7 /* ReedNewsViewController.swift in Sources */,
+				97ED5EF723CF71630004A2D7 /* ReadNewsViewController.swift in Sources */,
 				97848DEC23CD268D00D102E4 /* NewsViewController.swift in Sources */,
 				97848DEE23CD28D600D102E4 /* FindNewsViewController.swift in Sources */,
 				97B169C823CD1A7600C5317A /* SceneDelegate.swift in Sources */,

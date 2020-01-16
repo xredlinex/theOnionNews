@@ -33,11 +33,19 @@ class NewsTableViewCell: UITableViewCell {
 
 extension NewsTableViewCell {
     func updateNewsCell(_ article: Article) {
+//        if article.articleIsRead == false {
+//            article.articleIsRead = true
+//            
+//        }
+        
         titleTextLabel.text = article.title ?? "no title"
         descriptionTextLabel.text = article.description ?? "no desciption"
         articleImageView.downloadImage(url: article.urlToImage ?? "noImage")
         articlePublishedAtTextLabel.text = article.publishedAt ?? "00-00-00"
         authorTextLabel.text = article.author ?? "-"
+        
+
+        
         
     }
 }

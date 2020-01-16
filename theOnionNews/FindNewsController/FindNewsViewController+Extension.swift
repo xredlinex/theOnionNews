@@ -79,6 +79,7 @@ extension FindNewsViewController {
                                 if let content = jsonArticle["content"] as? String {
                                     article.content = content
                                 }
+                                article.articleIsRead = false
                                 article.source = source
                                    self.articles.append(article)
                             }

@@ -13,13 +13,15 @@ class FindNewsViewController: UIViewController {
     @IBOutlet weak var findNewsTextField: UITextField!
     @IBOutlet weak var bottomHeightContstraint: NSLayoutConstraint!
     
-
+    @IBOutlet weak var findNewsButton: UIButton!
+    
     var articles: [Article] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         findNewsTextField.delegate = self
+        findNewsButton.layer.cornerRadius = 12
         let keyboardhide = UITapGestureRecognizer(target: self, action: #selector(keyboardWillHide))
         view.addGestureRecognizer(keyboardhide)
     }
