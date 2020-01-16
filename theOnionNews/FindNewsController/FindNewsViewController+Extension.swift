@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 extension FindNewsViewController {
     
@@ -46,6 +47,9 @@ extension FindNewsViewController {
                     do {
                         let json = try JSONSerialization.jsonObject(with: jsonData, options: .allowFragments) as? [String : Any]
                         if let jsonArticles = json?["articles"] as? [[String : Any]] {
+                            DispatchQueue.main.async {
+                                self.view.makeToastActivity(.center)
+                            }
                             for jsonArticle in jsonArticles {
     
                                 let article = Article()
@@ -81,10 +85,12 @@ extension FindNewsViewController {
                                 }
                                 article.articleIsRead = false
                                 article.source = source
-                                   self.articles.append(article)
+                                self.articles.append(article)
+                                
                             }
                             DispatchQueue.main.async {
                                 if self.articles.count != 0 {
+                                    self.view.hideToastActivity()
                                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                                     let viewController = storyboard.instantiateViewController(withIdentifier: "NewsViewController") as! NewsViewController
                                     viewController.articles = self.articles
@@ -149,6 +155,7 @@ extension FindNewsViewController: UITextFieldDelegate {
 
 extension FindNewsViewController {
     func showErrorAlert(_ title: String) {
+        view.hideToastActivity()
         let alertController = UIAlertController(title: "Что то пошло не так!))", message: title, preferredStyle: .alert)
         let action = UIAlertAction(title: "Ok", style: .default) { (_) in }
         alertController.addAction(action)

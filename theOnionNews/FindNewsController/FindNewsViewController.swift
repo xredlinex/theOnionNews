@@ -23,12 +23,17 @@ class FindNewsViewController: UIViewController {
         findNewsButton.layer.cornerRadius = 12
         let keyboardhide = UITapGestureRecognizer(target: self, action: #selector(keyboardWillHide))
         view.addGestureRecognizer(keyboardhide)
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         articles.removeAll()
         findNewsTextField.text = ""
+        
+        
+        
     }
     
     @IBAction func didTapFindByKeywordActionButton(_ sender: Any) {
