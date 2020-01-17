@@ -17,6 +17,8 @@ class FindNewsViewController: UIViewController {
     @IBOutlet weak var findNewsView: UIView!
     
     var articles: [Article] = []
+    var fromDate = String()
+    var toDate = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()

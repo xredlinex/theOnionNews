@@ -274,18 +274,31 @@
                                                     <action selector="didTapFindByKeywordActionButton:" destination="68g-4Q-zPw" eventType="touchUpInside" id="cK1-yj-979"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jg-5a-gAF">
+                                                <rect key="frame" x="307" y="230" width="82" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="82" id="bsz-as-4ub"/>
+                                                    <constraint firstAttribute="height" constant="24" id="kR3-3O-7s9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <state key="normal" title="выбрать период">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="gb2-Q4-FbX" firstAttribute="leading" secondItem="jUd-45-Grw" secondAttribute="leading" id="11P-kP-nnK"/>
+                                            <constraint firstItem="6Jg-5a-gAF" firstAttribute="top" secondItem="gb2-Q4-FbX" secondAttribute="bottom" constant="21" id="4HG-ud-ccS"/>
                                             <constraint firstItem="gb2-Q4-FbX" firstAttribute="top" secondItem="X7P-7y-ZOI" secondAttribute="bottom" constant="10" id="BlR-f6-zn8"/>
                                             <constraint firstItem="X7P-7y-ZOI" firstAttribute="centerX" secondItem="Kr4-Po-skM" secondAttribute="centerX" id="EbV-qe-LhA"/>
                                             <constraint firstItem="Ed2-bT-Bbw" firstAttribute="centerX" secondItem="Kr4-Po-skM" secondAttribute="centerX" id="Im6-cs-C2E"/>
                                             <constraint firstAttribute="trailing" secondItem="AcA-4k-9za" secondAttribute="trailing" constant="25" id="Nyz-8J-IFO"/>
                                             <constraint firstItem="X7P-7y-ZOI" firstAttribute="top" secondItem="Kr4-Po-skM" secondAttribute="top" constant="50" id="Pu2-ia-iby"/>
-                                            <constraint firstItem="AcA-4k-9za" firstAttribute="top" secondItem="gb2-Q4-FbX" secondAttribute="bottom" constant="60" id="Tq1-yO-kaq"/>
+                                            <constraint firstItem="AcA-4k-9za" firstAttribute="top" secondItem="6Jg-5a-gAF" secondAttribute="bottom" constant="15" id="Yda-Al-bss"/>
                                             <constraint firstAttribute="bottom" secondItem="Ed2-bT-Bbw" secondAttribute="bottom" constant="150" id="by4-BM-qzg"/>
                                             <constraint firstItem="Ed2-bT-Bbw" firstAttribute="top" secondItem="AcA-4k-9za" secondAttribute="bottom" constant="52" id="hEC-xh-4Za"/>
+                                            <constraint firstItem="6Jg-5a-gAF" firstAttribute="trailing" secondItem="AcA-4k-9za" secondAttribute="trailing" id="iTB-Gk-nZE"/>
                                             <constraint firstItem="AcA-4k-9za" firstAttribute="leading" secondItem="Kr4-Po-skM" secondAttribute="leading" constant="25" id="z4T-7b-5jo"/>
                                         </constraints>
                                     </view>
@@ -318,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4y-tT-28G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="131.78410794602701"/>
+            <point key="canvasLocation" x="1059.4202898550725" y="131.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ziX-jn-mPv">

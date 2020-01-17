@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97658BEA23D0C22300DE242B /* SelectDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97658BE923D0C22300DE242B /* SelectDateViewController.swift */; };
 		97820D2B23CDCCC6006E9BBA /* FindNewsViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97820D2A23CDCCC6006E9BBA /* FindNewsViewController+Extension.swift */; };
 		97848DEA23CD1DD000D102E4 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97848DE923CD1DD000D102E4 /* NewsModel.swift */; };
 		97848DEC23CD268D00D102E4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97848DEB23CD268D00D102E4 /* NewsViewController.swift */; };
@@ -18,6 +19,7 @@
 		97B169D223CD1A7800C5317A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B169D023CD1A7800C5317A /* LaunchScreen.storyboard */; };
 		97DBFA4B23CD49D900E5D3D2 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DBFA4923CD49D900E5D3D2 /* NewsTableViewCell.swift */; };
 		97DBFA4C23CD49D900E5D3D2 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DBFA4A23CD49D900E5D3D2 /* NewsTableViewCell.xib */; };
+		97EABDFA23D1BA850087DA56 /* DateStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EABDF923D1BA850087DA56 /* DateStoryBoard.storyboard */; };
 		97ED5EF723CF71630004A2D7 /* ReadNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED5EF623CF71630004A2D7 /* ReadNewsViewController.swift */; };
 		97ED5EFC23CFE9C70004A2D7 /* NewsViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ED5EFB23CFE9C70004A2D7 /* NewsViewController+Extension.swift */; };
 		E31056DC13A0B6C995CF13D8 /* Pods_theOnionNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3D441763B5ADE53C692A22 /* Pods_theOnionNews.framework */; };
@@ -25,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		87FB7441C40EBDD95F6F96FF /* Pods-theOnionNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-theOnionNews.release.xcconfig"; path = "Target Support Files/Pods-theOnionNews/Pods-theOnionNews.release.xcconfig"; sourceTree = "<group>"; };
+		97658BE923D0C22300DE242B /* SelectDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateViewController.swift; sourceTree = "<group>"; };
 		97820D2A23CDCCC6006E9BBA /* FindNewsViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FindNewsViewController+Extension.swift"; sourceTree = "<group>"; };
 		97848DE923CD1DD000D102E4 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		97848DEB23CD268D00D102E4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		97B169D323CD1A7800C5317A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97DBFA4923CD49D900E5D3D2 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		97DBFA4A23CD49D900E5D3D2 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		97EABDF923D1BA850087DA56 /* DateStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DateStoryBoard.storyboard; sourceTree = "<group>"; };
 		97ED5EF623CF71630004A2D7 /* ReadNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNewsViewController.swift; sourceTree = "<group>"; };
 		97ED5EFB23CFE9C70004A2D7 /* NewsViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsViewController+Extension.swift"; sourceTree = "<group>"; };
 		9F3D441763B5ADE53C692A22 /* Pods_theOnionNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_theOnionNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +74,6 @@
 				C66B98651C484C6F95CFA633 /* Pods-theOnionNews.debug.xcconfig */,
 				87FB7441C40EBDD95F6F96FF /* Pods-theOnionNews.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,6 +83,15 @@
 				97848DE923CD1DD000D102E4 /* NewsModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		97658BEB23D0C22700DE242B /* SelectDateController */ = {
+			isa = PBXGroup;
+			children = (
+				97658BE923D0C22300DE242B /* SelectDateViewController.swift */,
+				97EABDF923D1BA850087DA56 /* DateStoryBoard.storyboard */,
+			);
+			path = SelectDateController;
 			sourceTree = "<group>";
 		};
 		97820D2923CDCC9B006E9BBA /* FindNewsController */ = {
@@ -119,6 +131,7 @@
 				97ED5EFA23CF76B00004A2D7 /* NewsController */,
 				97ED5EF823CF72730004A2D7 /* ReedNewsController */,
 				97B169CB23CD1A7600C5317A /* Main.storyboard */,
+				97658BEB23D0C22700DE242B /* SelectDateController */,
 				97B169CE23CD1A7800C5317A /* Assets.xcassets */,
 				97B169D023CD1A7800C5317A /* LaunchScreen.storyboard */,
 				97B169D323CD1A7800C5317A /* Info.plist */,
@@ -216,6 +229,7 @@
 				97B169D223CD1A7800C5317A /* LaunchScreen.storyboard in Resources */,
 				97B169CF23CD1A7800C5317A /* Assets.xcassets in Resources */,
 				97DBFA4C23CD49D900E5D3D2 /* NewsTableViewCell.xib in Resources */,
+				97EABDFA23D1BA850087DA56 /* DateStoryBoard.storyboard in Resources */,
 				97B169CD23CD1A7600C5317A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +288,7 @@
 				97B169C623CD1A7600C5317A /* AppDelegate.swift in Sources */,
 				97ED5EF723CF71630004A2D7 /* ReadNewsViewController.swift in Sources */,
 				97848DEC23CD268D00D102E4 /* NewsViewController.swift in Sources */,
+				97658BEA23D0C22300DE242B /* SelectDateViewController.swift in Sources */,
 				97848DEE23CD28D600D102E4 /* FindNewsViewController.swift in Sources */,
 				97B169C823CD1A7600C5317A /* SceneDelegate.swift in Sources */,
 				97ED5EFC23CFE9C70004A2D7 /* NewsViewController+Extension.swift in Sources */,

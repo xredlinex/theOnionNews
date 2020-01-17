@@ -63,6 +63,8 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
             newsCountTextLabel.text = "\(unreadArticles)"
         }
     }
+    
+    height
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 0, y: -10, width: tableView.frame.width, height: 40))
