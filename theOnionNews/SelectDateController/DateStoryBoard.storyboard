@@ -103,6 +103,9 @@
                                                 <state key="normal" title="применить фильтр">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="didTapApplyDateFilterActionButton:" destination="607-Gh-N7C" eventType="touchUpInside" id="Qbw-Nm-lW3"/>
+                                                </connections>
                                             </button>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="dhW-Rj-eAJ">
                                                 <rect key="frame" x="0.0" y="140.5" width="414" height="216"/>

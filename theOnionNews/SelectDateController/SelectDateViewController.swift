@@ -7,23 +7,19 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class SelectDateViewController: UIViewController {
     
     @IBOutlet weak var fromDatePickr: UIDatePicker!
-    
     @IBOutlet weak var toDatePicker: UIDatePicker!
-    
     @IBOutlet weak var setFilterButton: UIButton!
     
-    var fromDate: String?
-    var toDate: String?
-    var selectedFilter: String?
+    var fromDate = String()
+    var toDate = String()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setFilterButton.layer.cornerRadius = 12
         setDateLimit()
     }
@@ -41,17 +37,17 @@ class SelectDateViewController: UIViewController {
         let date = dateFormatter.string(from: fromDatePickr.date)
         toDate = date
     }
+    @IBAction func didTapApplyDateFilterActionButton(_ sender: Any) {
+        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FindNewsViewController") as! FindNewsViewController
+        viewController.textForFilterLabel = "новости с \(fromDate) по \(toDate)"
+        viewController.filterData = "&from=\(fromDate)&to=\(toDate)"
+        navigationController?.pushViewController(viewController, animated: false)
+    }
     
     
     @IBAction func didTapGoBackButton(_ sender: Any) {
-        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FindNewsViewController") as! FindNewsViewController
-        
-        
-        navigationController?.pushViewController(viewController, animated: false)
-        
-        
+        navigationController?.popViewController(animated: true)
     }
-    
 }
 
 
@@ -68,5 +64,11 @@ extension SelectDateViewController {
         toDatePicker.minimumDate = limitToDate
         fromDatePickr.maximumDate = currentDate
         toDatePicker.maximumDate = currentDate
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date = dateFormatter.string(from: fromDatePickr.date)
+        fromDate = date
+        toDate = date
     }
 }

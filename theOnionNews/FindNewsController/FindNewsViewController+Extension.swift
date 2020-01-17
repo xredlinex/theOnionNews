@@ -11,8 +11,10 @@ import Toast_Swift
 
 extension FindNewsViewController {
     
-    func getNews(_ keyword: String) {
-        let url = URL(string: "https://newsapi.org/v2/everything?q=\(keyword)&pageSize=100&from=2020-12-28&to=2020-01-12")
+    func getNews(_ keyword: String,_ date: String) {
+        
+        
+        let url = URL(string: "https://newsapi.org/v2/everything?q=\(keyword)&pageSize=100\(date)")
         
         if let url = url  {
             var urlRequest = URLRequest(url: url)

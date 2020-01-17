@@ -202,7 +202,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kr4-Po-skM">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="585"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="552"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поиск Новостей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb2-Q4-FbX">
                                                 <rect key="frame" x="75" y="188" width="139.5" height="21"/>
@@ -232,7 +232,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcA-4k-9za">
-                                                <rect key="frame" x="25" y="269" width="364" height="64"/>
+                                                <rect key="frame" x="25" y="248" width="364" height="64"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I2E-zP-PGP">
                                                         <rect key="frame" x="10" y="13" width="30" height="38"/>
@@ -260,7 +260,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed2-bT-Bbw">
-                                                <rect key="frame" x="87" y="385" width="240" height="50"/>
+                                                <rect key="frame" x="87" y="352" width="240" height="50"/>
                                                 <color key="backgroundColor" red="0.02871718816" green="0.38443666700000001" blue="0.26048436759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Ugl-xd-cWJ"/>
@@ -304,20 +304,50 @@
                                                     <constraint firstAttribute="height" constant="50" id="znY-oe-BHe"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRc-qc-61P">
+                                                <rect key="frame" x="25" y="228" width="364" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="800" id="hch-Lh-Fdr"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="600" constant="21" id="sLi-RM-TdN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.33360701799999998" green="0.33260688189999998" blue="0.36863234639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8h-MK-vwb">
+                                                <rect key="frame" x="87" y="332" width="240" height="0.0"/>
+                                                <color key="backgroundColor" red="0.0" green="0.45219528679999998" blue="0.3278699517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" priority="800" id="4MM-wa-AAr"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="600" constant="50" id="6Bt-ep-AYU"/>
+                                                    <constraint firstAttribute="width" constant="240" id="bWW-JB-sh5"/>
+                                                </constraints>
+                                                <state key="normal" title="удалить фильтр">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapDeleteFilterActionButton:" destination="68g-4Q-zPw" eventType="touchUpInside" id="j8f-eb-1vY"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="gb2-Q4-FbX" firstAttribute="leading" secondItem="jUd-45-Grw" secondAttribute="leading" id="11P-kP-nnK"/>
+                                            <constraint firstItem="QRc-qc-61P" firstAttribute="top" secondItem="X7P-7y-ZOI" secondAttribute="bottom" constant="50" id="58i-WQ-mJt"/>
                                             <constraint firstAttribute="trailing" secondItem="INQ-ab-WKD" secondAttribute="trailing" id="Ahn-xY-T5i"/>
                                             <constraint firstItem="gb2-Q4-FbX" firstAttribute="top" secondItem="X7P-7y-ZOI" secondAttribute="bottom" constant="10" id="BlR-f6-zn8"/>
                                             <constraint firstItem="X7P-7y-ZOI" firstAttribute="centerX" secondItem="Kr4-Po-skM" secondAttribute="centerX" id="EbV-qe-LhA"/>
                                             <constraint firstItem="Ed2-bT-Bbw" firstAttribute="centerX" secondItem="Kr4-Po-skM" secondAttribute="centerX" id="Im6-cs-C2E"/>
+                                            <constraint firstItem="QRc-qc-61P" firstAttribute="leading" secondItem="AcA-4k-9za" secondAttribute="leading" id="KTR-Df-hqZ"/>
                                             <constraint firstAttribute="trailing" secondItem="AcA-4k-9za" secondAttribute="trailing" constant="25" id="Nyz-8J-IFO"/>
                                             <constraint firstItem="X7P-7y-ZOI" firstAttribute="top" secondItem="Kr4-Po-skM" secondAttribute="top" constant="50" id="Pu2-ia-iby"/>
                                             <constraint firstItem="INQ-ab-WKD" firstAttribute="top" secondItem="Kr4-Po-skM" secondAttribute="top" id="SVa-0e-EwS"/>
+                                            <constraint firstItem="n8h-MK-vwb" firstAttribute="centerX" secondItem="Kr4-Po-skM" secondAttribute="centerX" id="WmD-Nx-kL8"/>
                                             <constraint firstAttribute="bottom" secondItem="Ed2-bT-Bbw" secondAttribute="bottom" constant="150" id="by4-BM-qzg"/>
-                                            <constraint firstItem="Ed2-bT-Bbw" firstAttribute="top" secondItem="AcA-4k-9za" secondAttribute="bottom" constant="52" id="hEC-xh-4Za"/>
-                                            <constraint firstItem="AcA-4k-9za" firstAttribute="top" secondItem="gb2-Q4-FbX" secondAttribute="bottom" constant="60" id="ire-gE-IrG"/>
+                                            <constraint firstItem="n8h-MK-vwb" firstAttribute="top" secondItem="AcA-4k-9za" secondAttribute="bottom" constant="20" id="epG-aT-8E1"/>
+                                            <constraint firstItem="QRc-qc-61P" firstAttribute="trailing" secondItem="AcA-4k-9za" secondAttribute="trailing" id="ff9-3k-pGg"/>
+                                            <constraint firstItem="AcA-4k-9za" firstAttribute="top" secondItem="QRc-qc-61P" secondAttribute="bottom" constant="20" id="kbe-Ps-5ZV"/>
+                                            <constraint firstItem="Ed2-bT-Bbw" firstAttribute="top" secondItem="n8h-MK-vwb" secondAttribute="bottom" constant="20" id="uzX-p8-vGe"/>
                                             <constraint firstItem="AcA-4k-9za" firstAttribute="leading" secondItem="Kr4-Po-skM" secondAttribute="leading" constant="25" id="z4T-7b-5jo"/>
                                         </constraints>
                                     </view>
@@ -343,9 +373,13 @@
                     <navigationItem key="navigationItem" id="TPj-dC-nJF"/>
                     <connections>
                         <outlet property="bottomHeightContstraint" destination="EHV-Lq-5bw" id="O7t-l3-adR"/>
+                        <outlet property="deleteFilterButton" destination="n8h-MK-vwb" id="GF6-k4-Ga8"/>
                         <outlet property="findNewsButton" destination="Ed2-bT-Bbw" id="aeK-UD-Yu6"/>
                         <outlet property="findNewsTextField" destination="jUd-45-Grw" id="1tC-wR-38s"/>
                         <outlet property="findNewsView" destination="AcA-4k-9za" id="Tta-iF-9Jb"/>
+                        <outlet property="hideDeleteFilterButtonHeightContstraint" destination="6Bt-ep-AYU" id="LP2-Lv-Ggi"/>
+                        <outlet property="selectedDateIntervalTextLabel" destination="QRc-qc-61P" id="Fmv-tK-JTO"/>
+                        <outlet property="showFilterHeightConstraint" destination="sLi-RM-TdN" id="w6m-UG-nph"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4y-tT-28G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
