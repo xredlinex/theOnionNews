@@ -67,6 +67,7 @@ extension SelectDateViewController {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
+        
         let date = dateFormatter.string(from: fromDatePickr.date)
         fromDate = date
         toDate = date
