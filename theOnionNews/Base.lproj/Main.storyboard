@@ -274,31 +274,50 @@
                                                     <action selector="didTapFindByKeywordActionButton:" destination="68g-4Q-zPw" eventType="touchUpInside" id="cK1-yj-979"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jg-5a-gAF">
-                                                <rect key="frame" x="307" y="230" width="82" height="24"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INQ-ab-WKD">
+                                                <rect key="frame" x="324" y="0.0" width="90" height="50"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hK6-DC-r56">
+                                                        <rect key="frame" x="25" y="5.5" width="40" height="39"/>
+                                                        <color key="tintColor" red="0.0" green="0.45219528679999998" blue="0.3278699517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="5UL-9I-U4U"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Q3l-iS-jho"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCB-d9-OCn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="50"/>
+                                                        <connections>
+                                                            <action selector="didTapSelectDateActionButton:" destination="68g-4Q-zPw" eventType="touchUpInside" id="NoH-lv-N7X"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="82" id="bsz-as-4ub"/>
-                                                    <constraint firstAttribute="height" constant="24" id="kR3-3O-7s9"/>
+                                                    <constraint firstItem="hK6-DC-r56" firstAttribute="centerX" secondItem="INQ-ab-WKD" secondAttribute="centerX" id="6l9-2c-Cqj"/>
+                                                    <constraint firstItem="TCB-d9-OCn" firstAttribute="leading" secondItem="INQ-ab-WKD" secondAttribute="leading" id="BYm-lE-lE7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="TCB-d9-OCn" secondAttribute="bottom" id="Pc4-eV-geK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TCB-d9-OCn" secondAttribute="trailing" id="Xjf-6l-OUG"/>
+                                                    <constraint firstAttribute="width" constant="90" id="aC0-gw-62v"/>
+                                                    <constraint firstItem="TCB-d9-OCn" firstAttribute="top" secondItem="INQ-ab-WKD" secondAttribute="top" id="nrH-cH-XvB"/>
+                                                    <constraint firstItem="hK6-DC-r56" firstAttribute="centerY" secondItem="INQ-ab-WKD" secondAttribute="centerY" id="wLD-ul-7Se"/>
+                                                    <constraint firstAttribute="height" constant="50" id="znY-oe-BHe"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                <state key="normal" title="выбрать период">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="gb2-Q4-FbX" firstAttribute="leading" secondItem="jUd-45-Grw" secondAttribute="leading" id="11P-kP-nnK"/>
-                                            <constraint firstItem="6Jg-5a-gAF" firstAttribute="top" secondItem="gb2-Q4-FbX" secondAttribute="bottom" constant="21" id="4HG-ud-ccS"/>
+                                            <constraint firstAttribute="trailing" secondItem="INQ-ab-WKD" secondAttribute="trailing" id="Ahn-xY-T5i"/>
                                             <constraint firstItem="gb2-Q4-FbX" firstAttribute="top" secondItem="X7P-7y-ZOI" secondAttribute="bottom" constant="10" id="BlR-f6-zn8"/>
                                             <constraint firstItem="X7P-7y-ZOI" firstAttribute="centerX" secondItem="Kr4-Po-skM" secondAttribute="centerX" id="EbV-qe-LhA"/>
                                             <constraint firstItem="Ed2-bT-Bbw" firstAttribute="centerX" secondItem="Kr4-Po-skM" secondAttribute="centerX" id="Im6-cs-C2E"/>
                                             <constraint firstAttribute="trailing" secondItem="AcA-4k-9za" secondAttribute="trailing" constant="25" id="Nyz-8J-IFO"/>
                                             <constraint firstItem="X7P-7y-ZOI" firstAttribute="top" secondItem="Kr4-Po-skM" secondAttribute="top" constant="50" id="Pu2-ia-iby"/>
-                                            <constraint firstItem="AcA-4k-9za" firstAttribute="top" secondItem="6Jg-5a-gAF" secondAttribute="bottom" constant="15" id="Yda-Al-bss"/>
+                                            <constraint firstItem="INQ-ab-WKD" firstAttribute="top" secondItem="Kr4-Po-skM" secondAttribute="top" id="SVa-0e-EwS"/>
                                             <constraint firstAttribute="bottom" secondItem="Ed2-bT-Bbw" secondAttribute="bottom" constant="150" id="by4-BM-qzg"/>
                                             <constraint firstItem="Ed2-bT-Bbw" firstAttribute="top" secondItem="AcA-4k-9za" secondAttribute="bottom" constant="52" id="hEC-xh-4Za"/>
-                                            <constraint firstItem="6Jg-5a-gAF" firstAttribute="trailing" secondItem="AcA-4k-9za" secondAttribute="trailing" id="iTB-Gk-nZE"/>
+                                            <constraint firstItem="AcA-4k-9za" firstAttribute="top" secondItem="gb2-Q4-FbX" secondAttribute="bottom" constant="60" id="ire-gE-IrG"/>
                                             <constraint firstItem="AcA-4k-9za" firstAttribute="leading" secondItem="Kr4-Po-skM" secondAttribute="leading" constant="25" id="z4T-7b-5jo"/>
                                         </constraints>
                                     </view>
@@ -354,6 +373,7 @@
     </scenes>
     <resources>
         <image name="arrow.left.circle" catalog="system" width="64" height="60"/>
+        <image name="calendar.circle" catalog="system" width="64" height="60"/>
         <image name="logo" width="336" height="134.5"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>

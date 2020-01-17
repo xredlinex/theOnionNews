@@ -88,6 +88,10 @@
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="yrf-8h-CjS">
                                                 <rect key="frame" x="0.0" y="417" width="414" height="216"/>
+                                                <color key="tintColor" red="0.0" green="0.45219528679999998" blue="0.3278699517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="toDatePickerActionPicker:" destination="607-Gh-N7C" eventType="valueChanged" id="MXv-KU-tHx"/>
+                                                </connections>
                                             </datePicker>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEV-ol-8Pf">
                                                 <rect key="frame" x="87" y="686" width="240" height="50"/>
@@ -102,6 +106,10 @@
                                             </button>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="dhW-Rj-eAJ">
                                                 <rect key="frame" x="0.0" y="140.5" width="414" height="216"/>
+                                                <color key="tintColor" red="0.0" green="0.45219528679999998" blue="0.3278699517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="fromDatePickerActionPicker:" destination="607-Gh-N7C" eventType="valueChanged" id="IwU-Qr-Dud"/>
+                                                </connections>
                                             </datePicker>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -145,8 +153,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="XKN-hl-IGq"/>
                     <connections>
-                        <outlet property="fromDatePickr" destination="dhW-Rj-eAJ" id="EZU-Op-1fW"/>
-                        <outlet property="toDatePickr" destination="yrf-8h-CjS" id="zdY-PB-SE5"/>
+                        <outlet property="fromDatePickr" destination="dhW-Rj-eAJ" id="9aM-P6-NqQ"/>
+                        <outlet property="setFilterButton" destination="gEV-ol-8Pf" id="UNp-kg-C2k"/>
+                        <outlet property="toDatePicker" destination="yrf-8h-CjS" id="z6K-fW-786"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mhg-xA-EHv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
