@@ -31,7 +31,7 @@ class ReadNewsViewController: UIViewController {
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "estimatedProgress" {
-            debugPrint("start loading page")
+            debugPrint("loading page")
             debugPrint(Float(webView.estimatedProgress))
             self.view.makeToastActivity(.center)
         }
