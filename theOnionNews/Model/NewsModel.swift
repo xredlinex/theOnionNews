@@ -11,13 +11,12 @@ import UIKit
 class NewsSourse: Codable {
     var status: String?
     var totalResults: Int?
+    var articles: [Article]?
     
     enum CodingKeys: String, CodingKey {
-        case status, totalResults
+        case status, totalResults, articles
     }
 }
-
-
 
 class Article: Codable {
     var source: Source?
