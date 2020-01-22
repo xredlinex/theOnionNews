@@ -13,7 +13,6 @@ extension FindNewsViewController {
     
     func getNews(_ keyword: String,_ date: String) {
         
-        
         let url = URL(string: "https://newsapi.org/v2/everything?q=\(keyword)&pageSize=100\(date)")
         
         if let url = url  {
