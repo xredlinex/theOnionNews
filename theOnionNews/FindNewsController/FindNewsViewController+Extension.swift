@@ -12,6 +12,8 @@ import Toast_Swift
 extension FindNewsViewController {
     
     func getNews(_ keyword: String) {
+        view.makeToastActivity(.center)
+
         let url = URL(string: "https://newsapi.org/v2/everything?q=\(keyword)&pageSize=100&from=2020-12-28&to=2020-01-12")
         
         if let url = url  {
@@ -19,11 +21,6 @@ extension FindNewsViewController {
             urlRequest.allHTTPHeaderFields = ["X-Api-Key" : "439c5ba63c944a2cac581d87e18fc759"]
             urlRequest.httpMethod = "GET"
             URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
-                if let error = error {
-                    self.showErrorAlert("error")
-                    debugPrint(error)
-                    return
-                }
                 guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
                     DispatchQueue.main.async {
                         if let httpErrResponse = response as? HTTPURLResponse {
@@ -47,9 +44,7 @@ extension FindNewsViewController {
                     do {
                         let json = try JSONSerialization.jsonObject(with: jsonData, options: .allowFragments) as? [String : Any]
                         if let jsonArticles = json?["articles"] as? [[String : Any]] {
-                            DispatchQueue.main.async {
-                                self.view.makeToastActivity(.center)
-                            }
+                         
                             for jsonArticle in jsonArticles {
                                 let article = Article()
                                 let source = Source()

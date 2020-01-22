@@ -37,9 +37,11 @@ class FindNewsViewController: UIViewController {
     @IBAction func didTapFindByKeywordActionButton(_ sender: Any) {
         if let keyword = findNewsTextField.text, keyword != "" {
             if keyword.contains(" ") {
-                view.makeToast("поиск только по одному ключевому слову. купите приемиум версию за 9.99$")
+                let newKeyword = keyword.replacingOccurrences(of: " ", with: "%20")
+                getNews(newKeyword)
+            } else {
+               getNews(keyword)
             }
-            getNews(keyword)
          } else {
            showErrorAlert("Пустое поле поиска!")
         }
