@@ -8,17 +8,18 @@
 
 import UIKit
 
-class NewsSourse {
+class NewsSourse: Codable {
     var status: String?
     var totalResults: Int?
+    
+    enum CodingKeys: String, CodingKey {
+        case status, totalResults
+    }
 }
 
-class Source {
-    var id: String?
-    var name: String?
-}
 
-class Article {
+
+class Article: Codable {
     var source: Source?
     var author: String?
     var title: String?
@@ -28,5 +29,17 @@ class Article {
     var publishedAt: String?
     var content: String?
     var articleIsRead: Bool?
+    
+    enum CodingKeys: String, CodingKey {
+        case source, author, title, description, url, urlToImage, publishedAt, content, articleIsRead
+    }
 }
 
+class Source: Codable {
+    var id: String?
+    var name: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id, name
+    }
+}
