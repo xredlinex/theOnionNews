@@ -6,5 +6,6 @@ target 'theOnionNews' do
   use_frameworks!
 
   pod 'Toast-Swift', '~> 5.0.1'
+  pod 'AlamofireObjectMapper', '~> 5.2'
 
 end

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -89,9 +89,10 @@
                         <constraints>
                             <constraint firstItem="h0Z-lA-Q3l" firstAttribute="leading" secondItem="VQn-AF-ywt" secondAttribute="trailing" constant="20" id="1Za-np-5gT"/>
                             <constraint firstItem="h0Z-lA-Q3l" firstAttribute="top" secondItem="guG-dY-xK4" secondAttribute="top" constant="15" id="761-ia-5No"/>
+                            <constraint firstItem="0CX-bd-dJw" firstAttribute="centerY" secondItem="Mvz-DL-o4G" secondAttribute="centerY" id="Kh9-7B-Ngj"/>
                             <constraint firstItem="VQn-AF-ywt" firstAttribute="top" secondItem="guG-dY-xK4" secondAttribute="top" constant="15" id="P9u-hr-hcs"/>
                             <constraint firstAttribute="trailing" secondItem="h0Z-lA-Q3l" secondAttribute="trailing" constant="15" id="QWV-Ao-jFe"/>
-                            <constraint firstItem="tOs-a2-rLL" firstAttribute="top" secondItem="0CX-bd-dJw" secondAttribute="top" id="eRg-Ry-OCn"/>
+                            <constraint firstItem="tOs-a2-rLL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0CX-bd-dJw" secondAttribute="trailing" constant="10" id="bjd-Wf-Hk8"/>
                             <constraint firstAttribute="bottom" secondItem="0CX-bd-dJw" secondAttribute="bottom" constant="42" id="hH3-Vt-2X5"/>
                             <constraint firstItem="Mvz-DL-o4G" firstAttribute="top" secondItem="4P9-c2-l4u" secondAttribute="bottom" constant="15" id="ic1-S4-hHx"/>
                             <constraint firstItem="Mvz-DL-o4G" firstAttribute="leading" secondItem="4P9-c2-l4u" secondAttribute="leading" id="jNW-ze-71g"/>
@@ -103,7 +104,6 @@
                             <constraint firstItem="4P9-c2-l4u" firstAttribute="leading" secondItem="VQn-AF-ywt" secondAttribute="leading" id="vm1-HL-op0"/>
                             <constraint firstItem="0CX-bd-dJw" firstAttribute="leading" secondItem="Mvz-DL-o4G" secondAttribute="trailing" constant="2" id="wQb-Ca-p40"/>
                             <constraint firstItem="4P9-c2-l4u" firstAttribute="top" secondItem="VQn-AF-ywt" secondAttribute="bottom" constant="10" id="xbp-uM-0vj"/>
-                            <constraint firstItem="0CX-bd-dJw" firstAttribute="top" secondItem="Mvz-DL-o4G" secondAttribute="top" id="xkl-dT-JeL"/>
                         </constraints>
                     </view>
                 </subviews>
